@@ -5,8 +5,9 @@ import Vue3Santitize from "vue-3-Sanitize";
 
 import App from './App.vue'
 import router from './router'
+import quasarUserOptions from './quasar-user-options'
 
-const app = createApp(App);
+const app = createApp(App).use(Quasar, quasarUserOptions);
 const allowedTagesAndAttributes = {
     allowedTags : ["a", "img", "br", "span", "u", "p", "li", "strong"],
     allowedAttributes : {
