@@ -6,7 +6,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'ResumeView',
-      component: ()=> import('../views/ResumeView.vue')
+      component: ()=> import('../views/ProfileView.vue')
     },
     
   ]

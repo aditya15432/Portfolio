@@ -18,9 +18,7 @@ const allowedTagesAndAttributes = {
 
 app.use(createPinia())
 app.use(router)
-app.use(Quasar, {
-    plugins: {}, 
-});
+app.use(Quasar);
 app.use(Vue3Santitize , allowedTagesAndAttributes);
 
 app.mount('#app')
